@@ -27,5 +27,4 @@ const selection_sort =(arr)=>{
 }
 
 
-
 console.log(selection_sort([4,3,5,2]))

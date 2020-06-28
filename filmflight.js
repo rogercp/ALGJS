@@ -6,7 +6,7 @@ const can_two_movies_fill_flight =(movie_lengths, flight_length)=>{
 
 let movie_lengths_seen = new Set();
 
-// add() has() clear()
+// add() has() clear() delete()
 
 	for (let i =0 ; i < movie_lengths.length; i++){
 
