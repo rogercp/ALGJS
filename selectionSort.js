@@ -1,41 +1,31 @@
 
 
-var my_arr = [23,4,56,3,5]
-
 
 const selection_sort =(arr)=>{
 
-
     for(let i = 0; i<arr.length;i++){
+      
+        let currentSmallest = i;
 
-        let currentIndex = i;
-        let currentSmallest = currentIndex;
+        for(let j = i + 1; j<arr.length; j++){
 
-        for(let j = currentIndex; j< arr.length; j++){
+            if(arr[currentSmallest]>arr[j]){
 
-            nextIndex = j ;
-
-            if(arr[nextIndex] < arr[curentSmallest]){
-
-                curentSmallest = nextIndex;
+                currentSmallest = j;
             }
-
         }
 
-
-        temp = arr[currentIndex];
-
-        arr[currentIndex] = arr[currentSmallest];
-
+      if(i !== currentSmallest){
+        temp = arr[i];
+        arr[i] = arr[currentSmallest];
         arr[currentSmallest] = temp;
-
+      }
+      
     }
 
+  return arr;
 }
 
 
 
-
-
-
-console.log(selection_sort(my_arr))
+console.log(selection_sort([4,3,5,2]))
