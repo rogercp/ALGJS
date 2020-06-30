@@ -12,11 +12,15 @@ const insertionSort =(arr)=>{
 
 		while(j >=0 && currentVal < arr[j]){
 
+			// keep looping and traversing down until you exit this loop
+
 			arr[j + 1] = arr[j]
 
-			j = j - 1
+			 j --
 
 		} 
+
+		// where you place the current value
 
 		arr[j + 1] = currentVal
 
